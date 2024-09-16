@@ -1,0 +1,85 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <title>Data Visualization Dashboard - Bar Chart</title>
+  <style>
+    .chart-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px; /* Space between the charts */
+    }
+
+    .svg-container {
+      margin-bottom: 40px; /* Space between each svg */
+    }
+
+    .toggle-buttons {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .toggle-buttons button {
+      padding: 10px 20px;
+      margin: 0 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Button to switch to the Bubble Chart -->
+  <div class="toggle-buttons">
+    <a href="index2.html"><button>Go to Bubble Chart</button></a>
+  </div>
+
+  <!-- Summary Section for Bar Chart -->
+  <div class="summary">
+    <h2>Understanding High Earning Jobs in the US</h2>
+    <p>Welcome to our analysis of high-earning jobs in the US. This overview will help you understand the varying salaries associated with different data-related roles, highlighting how expertise in certain areas can significantly impact earning potential.</p>
+
+    <div class="category">Top Earning Positions:</div>
+    <p>The top earners in the field are:</p>
+    <ul>
+        <li><strong>Machine Learning Scientist</strong> - Commands an impressive average salary of $260,000. This role requires advanced skills in designing algorithms that can learn from and make predictions on data.</li>
+        <li><strong>Data Architect</strong> - With an average salary of $230,000, Data Architects design and manage complex data systems, ensuring that data flows efficiently within an organization.</li>
+        <li><strong>Principal Data Scientist</strong> - Earning around $220,000 on average, Principal Data Scientists lead data-driven projects and provide strategic insights based on comprehensive data analysis.</li>
+    </ul>
+
+    <div class="category">Mid-Range Earning Positions:</div>
+    <p>Several roles offer competitive salaries, though they are slightly lower than the top earners:</p>
+    <ul>
+        <li><strong>Big Data Engineer</strong> - Typically earns between $150,000 and $190,000. This role focuses on building and maintaining systems that handle vast amounts of data.</li>
+        <li><strong>Machine Learning Engineer</strong> - Also within the $150,000 to $190,000 range, Machine Learning Engineers develop and implement machine learning models and systems.</li>
+    </ul>
+
+    <div class="category">Entry-Level Positions:</div>
+    <p>For those starting out or in less specialized roles, salaries tend to be lower:</p>
+    <ul>
+        <li><strong>Data Analyst</strong> - Average salaries range from $20,000 to $65,000. Data Analysts interpret and analyze data to help organizations make informed decisions.</li>
+        <li><strong>Product Data Analyst</strong> - This role also falls within the $20,000 to $65,000 range, focusing on data related to product performance and user behavior.</li>
+    </ul>
+
+    <div class="category">Interactive Features:</div>
+    <p>The graph also includes interactive elements that enhance user experience. When you hover over a bar in the graph, it changes color to orange and slightly expands, providing a clear and engaging way to explore salary information.</p>
+  </div>
+
+  <!-- Bar Chart Section -->
+  <div class="chart-container">
+    <div class="svg-container">
+      <div class="category">Graph 1: Salary Comparison and Remote Work Trends</div>
+      <svg id="salaryChart" width="900" height="400"></svg> <!-- Your bar chart will load here -->
+    </div>
+  </div>
+
+  <!-- Link to external scripts -->
+  <script src="script.js"></script> <!-- Bar chart script -->
+</body>
+</html>

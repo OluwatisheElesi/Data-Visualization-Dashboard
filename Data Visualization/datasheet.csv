@@ -1,0 +1,15 @@
+job_title,salary_in_usd,remote_ratio,company_size,experience_level
+Data Scientist,120000,50,M,SE
+Machine Learning Engineer,150000,100,L,SE
+Big Data Engineer,130000,50,L,MI
+Data Analyst,70000,0,S,MI
+Product Data Analyst,65000,50,M,EN
+Principal Data Scientist,220000,100,L,EX
+Data Architect,230000,50,L,EX
+Machine Learning Scientist,260000,100,L,EX
+Financial Analyst,90000,0,S,MI
+Research Scientist,140000,50,M,SE
+Business Intelligence Developer,85000,0,S,EN
+Quantitative Analyst,120000,50,M,SE
+Applied Data Scientist,170000,100,L,SE
+Lead Data Engineer,180000,50,L,SE

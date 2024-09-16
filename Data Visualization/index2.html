@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <title>Data Visualization Dashboard - Bubble Chart</title>
+  <style>
+    .chart-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px; /* Space between the charts */
+    }
+
+    .svg-container {
+      margin-bottom: 40px; /* Space between each svg */
+    }
+
+    .toggle-buttons {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .toggle-buttons button {
+      padding: 10px 20px;
+      margin: 0 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Button to switch to the Bar Chart -->
+  <div class="toggle-buttons">
+    <a href="index.html"><button>Go to Bar Chart</button></a>
+  </div>
+
+  <!-- Summary Section for Bubble Chart -->
+  <div class="summary">
+    <h2>Understanding Salary and Remote Work in Data Jobs</h2>
+    <p>This bubble chart provides a quick look at how <strong>salary</strong> and <strong>remote work</strong> vary across data-related jobs.</p>
+
+    <div class="category">Key Insights:</div>
+    <ul>
+      <li><strong>X-axis:</strong> Shows salary in USD – jobs on the right pay more.</li>
+      <li><strong>Y-axis:</strong> Indicates remote work flexibility – higher bubbles allow more remote work.</li>
+      <li><strong>Bubble Size:</strong> Represents company size, with larger bubbles for bigger companies.</li>
+      <li><strong>Bubble Color:</strong> Highlights the experience level required, from entry-level (blue) to executive (gold).</li>
+    </ul>
+
+    <p>Hover over a bubble for more details about the job title, salary, remote ratio, and company size.</p>
+  </div>
+
+  <!-- Bubble Chart Section -->
+  <div class="chart-container">
+    <div class="svg-container">
+      <div class="category">Graph 2: Salary vs Remote Ratio by Job Title</div>
+      <svg id="bubbleChart" width="900" height="500"></svg>
+    </div>
+  </div>
+
+  <!-- Link to external scripts -->
+  <script src="app.js"></script> <!-- Bubble chart script -->
+</body>
+</html>
